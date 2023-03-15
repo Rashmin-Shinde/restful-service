@@ -12,6 +12,7 @@ public class HelloWorldController {
         return "Hello World..!!";
     }
 
+    //Take parameter to include in response
     @GetMapping("/hello/{name}")
     public String sayHelloTo(@PathVariable String name){
         return "Hello Dear.... " + name;
